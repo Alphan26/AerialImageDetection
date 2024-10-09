@@ -1,0 +1,10 @@
+# Create configuration
+import yaml
+config = {'path': '/content/extracted_files',
+         'train': '/content/extracted_files/training',
+         'val': '/content/extracted_files/validation',
+         'nc': 15,
+         'names': ['lane', 'ship', 'storage tank', 'baseball diamond', 'tennis court', 'basketball court', 'ground track field', 'harbor', 'bridge', 'large vehicle', 'small vehicle', 'helicopter', 'roundabout', 'soccer ball field', 'swimming pool']}
+ 
+with open("data.yaml", "w") as file:
+   yaml.dump(config, file, default_flow_style=False)
