@@ -1,0 +1,10 @@
+# Veri yolları
+train: data/images/train
+val: data/images/val
+test: data/images/test
+
+# Sınıf sayısı
+nc: 2  # Sınıf sayınızı buraya yazın
+
+# Sınıf isimleri
+names: ['class1', 'class2']  # Sınıf isimlerinizi buraya yazın 
